@@ -1,0 +1,9 @@
+.reviewCard {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.imagesSection {
+    margin-right: 20px;
+    min-width: 80px;
+}

@@ -1,0 +1,30 @@
+.btn {
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5%;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    color: rgb(10, 47, 158);
+}
+
+.link {
+    text-decoration: none;
+    color: #2a363b;
+    margin-right: 15px;
+}
+
+.link:hover,
+.link:focus {
+    color: rgb(10, 47, 158);
+}
+
+.addTitle {
+    margin-top: 25px;
+    color: rgb(10, 47, 158);
+    font-weight: 600;
+}
