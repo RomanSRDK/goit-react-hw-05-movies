@@ -16,6 +16,7 @@ export default function PageSearch() {
   useEffect(() => {
     query && getMovies();
   });
+
   const getMovies = () => {
     fetchAPI.fetchSearchMovies(query).then(({ results }) => {
       if (results.length === 0) {

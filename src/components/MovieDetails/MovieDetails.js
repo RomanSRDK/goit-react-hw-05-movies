@@ -1,4 +1,5 @@
 import styles from '../MovieDetails/MovieDetails.module.css';
+import PropTypes from 'prop-types';
 
 export default function MovieDetails({ movie }) {
   return (
@@ -28,3 +29,17 @@ export default function MovieDetails({ movie }) {
     </div>
   );
 }
+
+MovieDetails.propTypes = {
+  movie: PropTypes.shape({
+    poster_path: PropTypes.string,
+    original_title: PropTypes.string,
+    vote_average: PropTypes.number,
+    overview: PropTypes.string,
+    genres: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+      })
+    ),
+  }).isRequired,
+};
